@@ -2,7 +2,7 @@
 
 ## If you like this template, feel free to check out and support my projects. [Bonk World](https://twitter.com/bonk_world) and [Jolly Santa](https://twitter.com/JollySantaNFT)
 
-## I am available on Discord stranzhay#4824
+## I am available on Discord stranzhay#4824. If you're feeling generous in SOL, you can donate to F7snYM4cE5RMbNXcuJTMwcKtxXNtXopJf9PNKXmSqNvv
 
 ## Live Preview Available https://candy-machine-mint-xi.vercel.app/
 
