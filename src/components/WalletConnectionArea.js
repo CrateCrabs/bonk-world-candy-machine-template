@@ -5,7 +5,6 @@ import Home from "./Home";
 
 const WalletConnectionArea = ({
   title,
-  subTitle,
   cta,
   backgroundImage,
   candyMachineId,
