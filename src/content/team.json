@@ -2,16 +2,16 @@
   "subtitle": "The Team",
   "quotes": [
     {
-      "jobTitle": "Everything but art !",
-      "name": "Bonky",
-      "photo": "/static/bonk-profile.jpeg",
-      "href": "https://twitter.com/_nighthawk69_"
+      "jobTitle": "Your role here",
+      "name": "Your name",
+      "photo": "/static/solana_logo.jpeg",
+      "href": "https://twitter.com/"
     },
     {
-      "jobTitle": "Creative Coder",
-      "name": "Konk",
-      "photo": "/static/bonk-profile.jpeg",
-      "href": "https://twitter.com/_nighthawk69_"
+      "jobTitle": "Your role here",
+      "name": "Your name",
+      "photo": "/static/solana_logo.jpeg",
+      "href": "https://twitter.com/"
     }
   ]
 }

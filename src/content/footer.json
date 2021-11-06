@@ -1,7 +1,7 @@
 {
   "logo": "/static/logo-light.svg",
-  "tagline": "Best React.js SaaS template",
-  "cta": { "href": "/", "text": "Get Odin Template" },
+  "tagline": "Candy Machine Template",
+  "cta": { "href": "/", "text": "Candy Machine Template" },
   "social": [
     {
       "platform": "twitter",
@@ -9,54 +9,11 @@
     },
     {
       "platform": "discord",
-      "href": "https://discord.com/channels/894758443943096360/894758443943096365"
+      "href": ""
     }
   ],
   "madeBy": {
     "text": "Stranzhay",
     "href": "https://twitter.com/_nighthawk69_"
-  },
-  "columns": [
-    {
-      "title": "Features",
-      "links": [
-        {
-          "title": "Best Practises",
-          "href": "/features"
-        },
-        {
-          "title": "SEO friendly",
-          "href": "/features"
-        },
-        { "title": "Easy Editing", "href": "/features" }
-      ]
-    },
-    {
-      "title": "Use Cases",
-      "links": [
-        { "title": "For Designers", "href": "/#" },
-        { "title": "For Developers", "href": "/#" },
-        { "title": "For Marketers", "href": "/#" },
-        {
-          "title": "For Illustrators",
-          "href": "/#"
-        },
-        {
-          "title": "For Entrepreneurs",
-          "href": "/#"
-        }
-      ]
-    },
-    {
-      "title": "Company",
-      "links": [
-        { "title": "About", "href": "/about" },
-        { "title": "Blog", "href": "/blog" },
-        { "title": "Changelog", "href": "/#" },
-        { "title": "Privacy Policy", "href": "/#" },
-        { "title": "Cookies Policy", "href": "/#" },
-        { "title": "Terms", "href": "/#" }
-      ]
-    }
-  ]
+  }
 }

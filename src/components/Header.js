@@ -1,10 +1,9 @@
 import React from "react";
-import Link from "next/link";
 import { HiMenu, HiX } from "react-icons/hi";
 import { Box, Flex, Text, Button, Image } from "@chakra-ui/react";
 
-import { primaryCTA } from "../../utils/styles";
-import useWindowSize from "../../hooks/useWindowSize";
+import { primaryCTA } from "../utils/styles";
+import useWindowSize from "../hooks/useWindowSize";
 
 const Header = ({ logoLight, logoDark, links, ...rest }) => {
   const [show, setShow] = React.useState(false);
@@ -24,7 +23,7 @@ const Header = ({ logoLight, logoDark, links, ...rest }) => {
       p={[6, 6, 8, 8]}
       px={[8, 8, 16, 8]}
       maxW="100%"
-      bg="#CA9CE1"
+      bg="red"
       color="white"
       {...rest}
     >
@@ -86,7 +85,7 @@ const MenuItem = ({ children, isLast, to = "/", ...rest }) => {
       fontWeight="600"
       {...rest}
     >
-      <Link href={to}>{children}</Link>
+      <a href={to}>{children}</a>
     </Text>
   );
 };

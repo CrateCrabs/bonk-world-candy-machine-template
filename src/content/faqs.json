@@ -2,16 +2,16 @@
   "title": "Frequently Asked Questions",
   "faqs": [
     {
-      "title": "What is Bonk World?",
-      "content": "Bonk World is simply a collection of multiple generative series with some occasional 1/1 pieces."
+      "title": "Question 1",
+      "content": "Answer 1"
     },
     {
-      "title": "Why Solana?",
-      "content": "We are attracted to Solana because of the community and low transaction fees."
+      "title": "Question 2",
+      "content": "Answer 2"
     },
     {
-      "title": "Where is the Bonk World roadmap?",
-      "content": "We don't have one! We are not the typical kind of NFT project. We will be continually releasing collections of pure art."
+      "title": "Question 3",
+      "content": "Answer 3"
     }
   ]
 }

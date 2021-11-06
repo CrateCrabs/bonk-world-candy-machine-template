@@ -1,24 +1,15 @@
 import React from "react";
-import Head from "next/head";
 import { Flex, Divider } from "@chakra-ui/react";
 
-import Header from "../sections/Header";
-import Footer from "../sections/Footer";
-import SEO from "../helpers/SEO";
+import Header from "./Header";
+import Footer from "./Footer";
 
-import footer from "../../content/footer.json";
-import header from "../../content/header.json";
-import { title } from "../../content/config.json";
+import footer from "../content/footer.json";
+import header from "../content/header.json";
 
 export default function LandingLayout({ children, ...rest }) {
   return (
     <Flex direction="column" align="center" w="100%" m="0 auto" {...rest}>
-      <Head>
-        <SEO />
-        <title>{title}</title>
-
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <Header {...header} />
       <Divider type="dashed" />
       {children}

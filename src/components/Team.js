@@ -11,17 +11,18 @@ import {
 } from "@chakra-ui/react";
 import { FiTwitter } from "react-icons/fi";
 
-import Section from "../ui/Section";
+import Section from "./Section";
+import team from "../content/team.json";
 
-const Team = ({ subtitle, quotes, ...rest }) => {
+const Team = () => {
   return (
     <Section
       id="team"
-      subtitle={subtitle}
+      subtitle={team.subtitle}
       maxW="100%"
       pt={8}
       overflowX="hidden"
-      sx={{ backgroundColor: "#72DDF7", marginTop: 0 }}
+      sx={{ backgroundColor: "black", marginTop: 0 }}
     >
       <Center position="relative" w="100%" py={16}>
         <Wrap
@@ -31,7 +32,7 @@ const Team = ({ subtitle, quotes, ...rest }) => {
           justify="center"
           m="0 !imporant"
         >
-          {quotes.map((user) => (
+          {team.quotes.map((user) => (
             <WrapItem>
               <Card {...user} />
             </WrapItem>

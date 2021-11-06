@@ -4,8 +4,8 @@ import { Flex, Text, Box } from "@chakra-ui/react";
 import { FiTwitter } from "react-icons/fi";
 import { FaDiscord } from "react-icons/fa";
 
-import Column from "../ui/Column";
-import Row from "../ui/Row";
+import Column from "./Column";
+import Row from ".//Row";
 
 const Footer = ({
   logo,
@@ -29,7 +29,7 @@ const Footer = ({
     >
       <Column
         spacing={16}
-        bg="#CA9CE1"
+        bg="red"
         pt={8}
         w="100%"
         minW="100%"

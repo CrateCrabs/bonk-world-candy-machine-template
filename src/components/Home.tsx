@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
 import styled from "styled-components";
 import Countdown from "react-countdown";
-import { Button, CircularProgress, Snackbar } from "@material-ui/core";
+import { secondaryCTA } from "../utils/styles";
+import { Button } from "@chakra-ui/react";
+import { CircularProgress, Snackbar } from "@material-ui/core";
 import Alert from "@material-ui/lab/Alert";
 
 import * as anchor from "@project-serum/anchor";
@@ -17,7 +19,7 @@ import {
   getCandyMachineState,
   mintOneToken,
   shortenAddress,
-} from "./candy-machine";
+} from "../candy-machine";
 
 const ConnectButton = styled(WalletDialogButton)``;
 

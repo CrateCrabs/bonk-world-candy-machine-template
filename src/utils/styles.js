@@ -28,7 +28,7 @@ export const secondaryCTA = {
   colorScheme: "primary",
   borderRadius: "8px",
   bg: "white",
-  color: "#CA9CE1",
+  color: "red",
   py: "6",
   px: "4",
   size: "md",

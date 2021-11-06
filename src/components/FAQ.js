@@ -10,7 +10,9 @@ import {
   AccordionPanel,
 } from "@chakra-ui/react";
 
-export default function Faq({ title, faqs, ...rest }) {
+import faqs from "./../content/faqs.json";
+
+export default function Faq({ ...rest }) {
   return (
     <Flex
       id="faq"
@@ -31,7 +33,7 @@ export default function Faq({ title, faqs, ...rest }) {
         color="gray.900"
         textTransform="capitalize"
       >
-        {title}
+        {faqs.title}
       </Heading>
 
       <Accordion
@@ -47,7 +49,7 @@ export default function Faq({ title, faqs, ...rest }) {
         borderColor="primary.900"
         allowMultiple
       >
-        {faqs.map((faq, index) => (
+        {faqs.faqs.map((faq, index) => (
           <AccordionItem
             key={`faq-${index}`}
             borderStyle="none"

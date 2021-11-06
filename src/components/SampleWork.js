@@ -1,17 +1,18 @@
 import React from "react";
 import { Image, Center, Wrap, WrapItem } from "@chakra-ui/react";
 
-import Section from "../ui/Section";
+import Section from "./Section";
+import sampleWork from "../content/sample-work.json";
 
-const SampleWork = ({ subtitle, ...rest }) => {
+const SampleWork = () => {
   return (
     <Section
       id="sampleWork"
-      subtitle={subtitle}
+      subtitle={sampleWork.subtitle}
       justify="center"
       maxW="100%"
       py={20}
-      sx={{ backgroundColor: "#E43F6F", marginTop: 0 }}
+      sx={{ backgroundColor: "gray", marginTop: 0 }}
     >
       <Center position="relative" w="100%" py={16}>
         <Wrap
@@ -23,7 +24,7 @@ const SampleWork = ({ subtitle, ...rest }) => {
         >
           <WrapItem>
             <Image
-              src="/static/2853.svg"
+              src="/static/charmander.jpeg"
               w="100%"
               h="100%"
               borderRadius="1rem"
@@ -31,7 +32,7 @@ const SampleWork = ({ subtitle, ...rest }) => {
           </WrapItem>
           <WrapItem>
             <Image
-              src="/static/2853.svg"
+              src="/static/squirtle.jpeg"
               w="100%"
               h="100%"
               borderRadius="1rem"
@@ -39,7 +40,7 @@ const SampleWork = ({ subtitle, ...rest }) => {
           </WrapItem>
           <WrapItem>
             <Image
-              src="/static/2853.svg"
+              src="/static/bulbasaur.jpeg"
               w="100%"
               h="100%"
               borderRadius="1rem"

@@ -1,13 +1,20 @@
 import React from "react";
 import { Button, Link, Heading, Center, VStack } from "@chakra-ui/react";
-
 import { secondaryCTA } from "../utils/styles";
+
+// import Home from "./Home";
 
 const WalletConnectionArea = ({
   title,
   subTitle,
   cta,
   backgroundImage,
+  // candyMachineId,
+  // config,
+  // connection,
+  // startDate,
+  // treasury,
+  // txTimeout,
   ...rest
 }) => {
   return (
@@ -27,7 +34,7 @@ const WalletConnectionArea = ({
         borderRadius="1rem"
         borderColor="gray.200"
         borderWidth=".25rem"
-        bg="#CA9CE1"
+        bg="red"
         color="white"
         textAlign="center"
         _hover={{ transform: "scale(1.005)" }}
@@ -59,6 +66,7 @@ const WalletConnectionArea = ({
 
         <VStack spacing={4}>
           <Link href={cta.href}>
+            {/* <Home /> */}
             <Button {...secondaryCTA}>{cta.text}</Button>
           </Link>
         </VStack>
