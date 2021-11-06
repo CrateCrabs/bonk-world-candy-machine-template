@@ -52,15 +52,6 @@ const WalletConnectionArea = ({
           >
             {title}
           </Heading>
-          <Heading
-            as="h3"
-            fontSize={["sm", "sm", "lg", "lg"]}
-            fontWeight={600}
-            maxW="500px"
-            lineHeight="1.7"
-          >
-            {subTitle}
-          </Heading>
         </VStack>
 
         <VStack spacing={4}>
