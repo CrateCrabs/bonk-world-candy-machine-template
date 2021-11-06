@@ -1,0 +1,17 @@
+{
+  "subtitle": "The Team",
+  "quotes": [
+    {
+      "jobTitle": "Everything but art !",
+      "name": "Bonky",
+      "photo": "/static/bonk-profile.jpeg",
+      "href": "https://twitter.com/_nighthawk69_"
+    },
+    {
+      "jobTitle": "Creative Coder",
+      "name": "Konk",
+      "photo": "/static/bonk-profile.jpeg",
+      "href": "https://twitter.com/_nighthawk69_"
+    }
+  ]
+}

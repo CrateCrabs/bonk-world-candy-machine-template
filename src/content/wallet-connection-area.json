@@ -1,0 +1,8 @@
+{
+  "title": "Bonk World",
+  "subTitle": "Currently minting: Bonk Bags",
+  "cta": {
+    "text": "Connect Wallet"
+  },
+  "backgroundImage": "/static/bonk-world.svg"
+}

@@ -1,8 +1,6 @@
 import "./App.css";
 import { useMemo } from "react";
 
-import Home from "./Home";
-import { LandingLayout } from "./components";
 import { Divider } from "@chakra-ui/react";
 
 import * as anchor from "@project-serum/anchor";
@@ -22,8 +20,14 @@ import {
 } from "@solana/wallet-adapter-react";
 
 import { WalletDialogProvider } from "@solana/wallet-adapter-material-ui";
-import { createTheme, ThemeProvider } from "@material-ui/core";
 import LowerSiteContent from "./components/LowerSiteContent";
+import WalletConnectionArea from "./components/WalletConnectionArea";
+import LandingLayout from "./components/LandingLayout";
+import SampleWork from "./components/SampleWork";
+import Team from "./components/Team";
+import sampleWork from "./content/sample-work.json";
+import walletConnectionArea from "./content/wallet-connection-area.json";
+import team from "./content/team.json";
 
 const treasury = new anchor.web3.PublicKey(
   process.env.REACT_APP_TREASURY_ADDRESS!
@@ -61,36 +65,33 @@ const App = () => {
   );
 
   return (
-    <ThemeProvider theme={theme}>
-      <ConnectionProvider endpoint={endpoint}>
-        <WalletProvider wallets={wallets} autoConnect={true}>
-          <WalletDialogProvider>
-            {/* <Home
+    <ConnectionProvider endpoint={endpoint}>
+      <WalletProvider wallets={wallets} autoConnect={true}>
+        <WalletDialogProvider>
+          <LandingLayout>
+            <WalletConnectionArea
+              {...walletConnectionArea}
               candyMachineId={candyMachineId}
               config={config}
               connection={connection}
               startDate={startDateSeed}
               treasury={treasury}
               txTimeout={txTimeout}
-            /> */}
-            <LandingLayout>
-              <WalletConnectionArea {...walletConnectionArea} />
-              <Divider type="dashed" />
-              <SampleWork {...sampleWork} />
-              <Team {...team} />
-              <LowerSiteContent
-                {...pricing}
-                sx={{
-                  backgroundColor: "#5EFC8D",
-                  marginTop: 0,
-                  maxWidth: "100%",
-                }}
-              />
-            </LandingLayout>
-          </WalletDialogProvider>
-        </WalletProvider>
-      </ConnectionProvider>
-    </ThemeProvider>
+            />
+            <Divider type="dashed" />
+            <SampleWork {...sampleWork} />
+            <Team {...team} />
+            <LowerSiteContent
+              sx={{
+                backgroundColor: "#5EFC8D",
+                marginTop: 0,
+                maxWidth: "100%",
+              }}
+            />
+          </LandingLayout>
+        </WalletDialogProvider>
+      </WalletProvider>
+    </ConnectionProvider>
   );
 };
 
