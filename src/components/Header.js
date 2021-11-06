@@ -48,25 +48,7 @@ const Header = ({ logoLight, logoDark, links, ...rest }) => {
         >
           {links.map(({ href, text, isCTA }, index) => (
             <MenuItem to={href} isLast={index === links.length - 1}>
-              {isCTA ? (
-                <Button
-                  color={["primary.500", "primary.500", "white", "white"]}
-                  bg={["white", "white", "primary.500", "primary.500"]}
-                  _hover={{
-                    bg: [
-                      "primary.100",
-                      "primary.100",
-                      "primary.600",
-                      "primary.600",
-                    ],
-                  }}
-                  {...primaryCTA}
-                >
-                  {text}
-                </Button>
-              ) : (
-                text
-              )}
+              {text}
             </MenuItem>
           ))}
         </Flex>

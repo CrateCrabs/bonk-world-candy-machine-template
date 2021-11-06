@@ -1,20 +1,19 @@
 import React from "react";
-import { Button, Link, Heading, Center, VStack } from "@chakra-ui/react";
-import { secondaryCTA } from "../utils/styles";
+import { Link, Heading, Center, VStack } from "@chakra-ui/react";
 
-// import Home from "./Home";
+import Home from "./Home";
 
 const WalletConnectionArea = ({
   title,
   subTitle,
   cta,
   backgroundImage,
-  // candyMachineId,
-  // config,
-  // connection,
-  // startDate,
-  // treasury,
-  // txTimeout,
+  candyMachineId,
+  config,
+  connection,
+  startDate,
+  treasury,
+  txTimeout,
   ...rest
 }) => {
   return (
@@ -66,8 +65,14 @@ const WalletConnectionArea = ({
 
         <VStack spacing={4}>
           <Link href={cta.href}>
-            {/* <Home /> */}
-            <Button {...secondaryCTA}>{cta.text}</Button>
+            <Home
+              candyMachineId={candyMachineId}
+              config={config}
+              connection={connection}
+              startDate={startDate}
+              treasury={treasury}
+              txTimeout={txTimeout}
+            />
           </Link>
         </VStack>
       </VStack>
