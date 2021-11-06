@@ -2,6 +2,8 @@
 
 ## If you like this template, feel free to check out and support my projects. [Bonk World](https://twitter.com/bonk_world) and [Jolly Santa](https://twitter.com/JollySantaNFT)
 
+## I am available on Discord stranzhay#4824
+
 ## Live Preview Available https://candy-machine-mint-xi.vercel.app/
 
 ## This template was a remixed combo of a Chakra-UI template by [Jim Raptis](https://twitter.com/d__raptis), original version [here](https://odin-gilt.vercel.app/), and the [Exiled Apes Candy Machine template](https://github.com/exiled-apes/candy-machine-mint).
