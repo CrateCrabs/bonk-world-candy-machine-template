@@ -32,7 +32,7 @@ const SampleWork = () => {
           </WrapItem>
           <WrapItem>
             <Image
-              src="/static/squirtle.jpeg"
+              src="/static/charmander.jpeg"
               w="100%"
               h="100%"
               borderRadius="1rem"
@@ -40,7 +40,7 @@ const SampleWork = () => {
           </WrapItem>
           <WrapItem>
             <Image
-              src="/static/bulbasaur.jpeg"
+              src="/static/charmander.jpeg"
               w="100%"
               h="100%"
               borderRadius="1rem"
