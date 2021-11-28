@@ -23,7 +23,7 @@ const Header = ({ logoLight, logoDark, links, ...rest }) => {
       p={[6, 6, 8, 8]}
       px={[8, 8, 16, 8]}
       maxW="100%"
-      bg="red"
+      bg="#ad3d3f"
       color="white"
       {...rest}
     >
